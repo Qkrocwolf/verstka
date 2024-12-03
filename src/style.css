@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito Sans", serif;
+}
+
+@layer components {
+  .btn-primary {
+    @apply text-nowrap bg-primary-blue px-6 py-4 text-[14px] font-black uppercase;
+  }
+}
