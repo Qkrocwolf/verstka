@@ -43,17 +43,6 @@ onMounted(() => {
 });
 
 const currentSlide = ref<number>(0);
-const lastSlide = ref<number>(props.dataLength - 1);
-const next = (): number => {
-  return currentSlide.value === lastSlide.value
-    ? (currentSlide.value = 0)
-    : currentSlide.value++;
-};
-const prev = () => {
-  return currentSlide.value === 0
-    ? (currentSlide.value = lastSlide.value)
-    : currentSlide.value--;
-};
 
 provide("currentIndex", currentSlide);
 </script>
